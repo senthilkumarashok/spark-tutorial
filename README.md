@@ -10,13 +10,21 @@
   * Distributed computing engine for big data and in memory processing
   * Fault tolerance
   
-RDD
-broadcast variables
-Driver - entry point that contains the spark-context instance
-Master - scheduling and resource orchestration
-Worker - Maintain node state and running executors
-Executor - allocated per job and in charge of executing the tasks from the job
-Spark Context 
+## Key Points - Spark
+
+ * Spark Client - contains the driver & Spark Context .
+ * Driver - entry point that contains the spark-context instance .
+ * Spark Context - interface used to import , export and computing data  .
+ * Master - scheduling and resource orchestration .
+ * Worker - Maintain node state and running executors .
+ * Executor - allocated per job and in charge of executing the tasks from the job .
+
+# spark computation
+
+ * Spark computes the network of operations in a graph which is DAG
+ * Each DAG is converted to jobs
+ * Each jobs composed of one or more stages
+ * Each stages composed of one or more tasks
 
 ## MapReduce Vs Spark
 
