@@ -43,6 +43,14 @@
   * GraphX -
   * spark-streaming - 
   
+## Spark - S3
+
+val file = sqlContext.read.parquet("s3a://<bucket-name>/<fileLocation>");
+
+var DF = file.toDF();
+
+DF.select("<col1>","<col2>").show(10, false);
+  
 
   
   
